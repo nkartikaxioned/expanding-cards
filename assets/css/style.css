@@ -103,18 +103,6 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
@@ -122,6 +110,31 @@ li {
 
 
 
+.expanding-cards .wrapper ul { display: flex; }
+.list li:not(:last-child) {  margin-right: 10px; }
+.list li { cursor: pointer; }
+
+.section {
+  flex: 0.1;
+  height: 250px;
+  transition:  0.7s linear;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.active {
+  flex: 1.5;
+}
 
 
 
@@ -130,20 +143,6 @@ li {
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
