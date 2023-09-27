@@ -79,7 +79,7 @@ sub { bottom: -.25em; }
 }
 
 .cf:after { clear: both; }
-.cf { *zoom: 1; }
+/* .cf { *zoom: 1; } */
 
 /*for all*/
 body {
@@ -115,26 +115,19 @@ li {
 .list li { cursor: pointer; }
 
 .section {
-  flex: 0.1;
-  height: 250px;
+  width: 7%;
+  height: 450px;
   transition:  0.7s linear;
 }
 
-figure {
-  width: 100%;
-  height: 100%;
-}
-
 img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 14px;
+  object-fit: cover;
 }
 
-.active {
-  flex: 1.5;
-}
+.active { width: 100%; }
 
 
 
