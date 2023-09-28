@@ -5,31 +5,20 @@
 
 const sections = document.querySelectorAll('.section');
 
-sections.forEach((section)=>{
-   
-    section.addEventListener('click',()=>{
-  
-        sections.forEach((section) => {
-            section.classList.remove('active')
-        })
-        section.classList.add('active')
+  const removeCard = () => {
+    sections.forEach((card)=>{
+      card.classList.remove('active');
     })
-})
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sections.forEach((card) =>{
+  console.log('In the Foreach')
+  card.addEventListener('click',()=>{
+    console.log('AdEventlisener')
+    removeCard()
+    card.classList.add('active');
+  })
+ })
 
 
 
